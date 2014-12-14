@@ -26,6 +26,14 @@
     return @"<h2>No Description Provided</h2>";
 }
 
+-(void)processFLIRData:(NSData*)flirImage imageSize:(CGSize)size
+{
+    cv::Mat mat((int)size.height, (int)size.width, CV_8UC4, (char*)[flirImage bytes]);
+    cv::Mat workingCopy = mat.clone();
+
+    [self processMat:workingCopy];
+}
+
 -(void)processImageBuffer:(CVImageBufferRef)imageBuffer withMirroring:(BOOL)shouldMirror
 {
     // Lock the base address of the pixel buffer

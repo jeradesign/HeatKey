@@ -6,19 +6,23 @@
 //  Copyright (c) 2012 Jera Design LLC. All rights reserved.
 //
 
-#import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
 #import "CVFImageProcessorDelegate.h"
 #import "CVFFlipsideViewController.h"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnewline-eof"
+#import <FLIROneSDK/FLIROneSDK.h>
+#pragma clang diagnostic pop
 
 @class CVFImageProcessor;
 
 @interface CVFMainViewController : UIViewController <
     CVFFlipsideViewControllerDelegate,
     UIPopoverControllerDelegate,
-    AVCaptureVideoDataOutputSampleBufferDelegate,
     CVFImageProcessorDelegate,
-    UIWebViewDelegate
+    UIWebViewDelegate,
+    FLIROneSDKImageReceiverDelegate,
+    FLIROneSDKStreamManagerDelegate
     >
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *fpsLabel;
