@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CVFunhouse.xcodeproj">
+      location = "self:HeatKey.xcodeproj">
    </FileRef>
 </Workspace>
