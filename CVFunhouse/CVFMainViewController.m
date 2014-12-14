@@ -331,7 +331,8 @@
 
 - (void)setupCamera {
     [[FLIROneSDKStreamManager sharedInstance] addDelegate:self];
-    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsBlendedMSXRGBA8888Image];
+//    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsBlendedMSXRGBA8888Image];
+    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalRGBA8888Image];
 }
 
 - (void)turnCameraOn {
@@ -346,6 +347,15 @@
 #pragma unused(msxImage)
 #pragma unused(size)
     [self.imageProcessor processFLIRData:msxImage imageSize:size];
+}
+
+- (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager didReceiveThermalRGBA8888Image:(NSData *)thermalImage imageSize:(CGSize)size
+{
+#pragma unused(delegateManager)
+#pragma unused(thermalImage)
+#pragma unused(size)
+    (unsigned long)thermalImage.length, size.height, size.width);
+    [self.imageProcessor processFLIRData:thermalImage imageSize:size];
 }
 
 #pragma mark - FLIROneSDKStreamManagerDelegate methods
