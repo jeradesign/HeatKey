@@ -354,7 +354,6 @@
 #pragma unused(delegateManager)
 #pragma unused(thermalImage)
 #pragma unused(size)
-    (unsigned long)thermalImage.length, size.height, size.width);
     [self.imageProcessor processFLIRData:thermalImage imageSize:size];
 }
 
