@@ -59,6 +59,7 @@
 		<string>com.FLIR.rosebud.fileio</string>
 		<string>com.FLIR.rosebud.config</string>
 		<string>com.FLIR.rosebud.frame</string>
+		<string>com.motrr.galileo</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

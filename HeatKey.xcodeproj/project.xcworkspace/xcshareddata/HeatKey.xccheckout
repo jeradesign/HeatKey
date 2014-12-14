@@ -12,6 +12,8 @@
 	<dict>
 		<key>158EF702276F66A9237FA7AD7161917397DDDAD8</key>
 		<string>github.com:jeradesign/HeatKey.git</string>
+		<key>24E09537C3E6723D4CDDC7675CEAC86C21C7974A</key>
+		<string>github.com:jeradesign/GalileoTracker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HeatKey.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>158EF702276F66A9237FA7AD7161917397DDDAD8</key>
 		<string>../..</string>
+		<key>24E09537C3E6723D4CDDC7675CEAC86C21C7974A</key>
+		<string>../../../GalileoTracker</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:jeradesign/HeatKey.git</string>
@@ -28,6 +32,14 @@
 	<string>158EF702276F66A9237FA7AD7161917397DDDAD8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>24E09537C3E6723D4CDDC7675CEAC86C21C7974A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GalileoTracker</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

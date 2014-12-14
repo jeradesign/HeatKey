@@ -11,6 +11,7 @@
 #import "CVFFlipsideViewController.h"
 
 #import "CVFPassThru.h"
+#import "CVFHeatKey.h"
 
 @interface CVFMainViewController()
 
@@ -18,6 +19,8 @@
 @property (atomic, assign) CGSize irSize;
 @property (atomic, strong) NSData *visData;
 @property (atomic, assign) CGSize visSize;
+
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end
 
@@ -155,6 +158,11 @@
 - (void)setImageProcessor:(CVFImageProcessor *)imageProcessor
 {
     if (_imageProcessor != imageProcessor) {
+        if ([imageProcessor isMemberOfClass:[CVFHeatKey class]]) {
+            self.backgroundImage.hidden = NO;
+        } else {
+            self.backgroundImage.hidden = YES;
+        }
         _imageProcessor.delegate = nil;
         _imageProcessor = imageProcessor;
         _imageProcessor.delegate = self;

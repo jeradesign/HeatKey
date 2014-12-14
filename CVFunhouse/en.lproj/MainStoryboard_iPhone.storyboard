@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vikinglander1-1.jpg" id="eUa-tL-OPV">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vikinglander1-1.jpg" id="eUa-tL-OPV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -105,6 +105,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="arView" destination="DjF-MQ-6lU" id="GGj-Lc-5Ig"/>
+                        <outlet property="backgroundImage" destination="eUa-tL-OPV" id="uk5-yV-Dcb"/>
                         <outlet property="descriptionContainer" destination="fnl-NY-TTY" id="z6k-Kb-5eT"/>
                         <outlet property="descriptionView" destination="TVS-vQ-ZgI" id="EpH-vs-i3P"/>
                         <outlet property="flipCameraButton" destination="lKb-tT-4x6" id="CMq-0W-Cdx"/>

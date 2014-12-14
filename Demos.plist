@@ -10,5 +10,9 @@
 		<string>HeatKey</string>
 		<string>CVFHeatKey</string>
 	</array>
+	<array>
+		<string>Heat Tracker</string>
+		<string>CVFHeatTracker</string>
+	</array>
 </array>
 </plist>

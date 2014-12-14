@@ -20,6 +20,12 @@
 		425370901508384900BFE3C0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253708E1508384900BFE3C0 /* CoreMedia.framework */; };
 		425370911508384900BFE3C0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253708F1508384900BFE3C0 /* CoreVideo.framework */; };
 		42537094150839FF00BFE3C0 /* CVFImageProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42537093150839FF00BFE3C0 /* CVFImageProcessor.mm */; };
+		42551E6D1A3DDF40001BD3AD /* CVFHeatTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42551E6C1A3DDF40001BD3AD /* CVFHeatTracker.mm */; };
+		42551E6F1A3DE146001BD3AD /* GalileoControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42551E6E1A3DE146001BD3AD /* GalileoControl.framework */; };
+		42551E741A3DE282001BD3AD /* CVFGalileoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 42551E711A3DE282001BD3AD /* CVFGalileoHandler.m */; };
+		42551E751A3DE282001BD3AD /* CVFBlobFollow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42551E721A3DE282001BD3AD /* CVFBlobFollow.mm */; };
+		42551E771A3DE2D9001BD3AD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42551E761A3DE2D9001BD3AD /* libxml2.dylib */; };
+		42551E791A3DE2E0001BD3AD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42551E781A3DE2E0001BD3AD /* CoreBluetooth.framework */; };
 		426B881416BC6BE30093D62F /* NoDescription.html in Resources */ = {isa = PBXBuildFile; fileRef = 426B881316BC6BE30093D62F /* NoDescription.html */; };
 		4275AFCC15095A2C00D74063 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4275AFCB15095A2C00D74063 /* libz.dylib */; };
 		427D67E015D9CB81008A25FA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 427D67DF15D9CB81008A25FA /* Settings.bundle */; };
@@ -71,6 +77,15 @@
 		42537092150839FF00BFE3C0 /* CVFImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFImageProcessor.h; sourceTree = "<group>"; };
 		42537093150839FF00BFE3C0 /* CVFImageProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVFImageProcessor.mm; sourceTree = "<group>"; };
 		4253709515083BA800BFE3C0 /* CVFImageProcessorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFImageProcessorDelegate.h; sourceTree = "<group>"; };
+		42551E6B1A3DDF40001BD3AD /* CVFHeatTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFHeatTracker.h; path = CVFunhouse/CVFHeatTracker.h; sourceTree = "<group>"; };
+		42551E6C1A3DDF40001BD3AD /* CVFHeatTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVFHeatTracker.mm; path = CVFunhouse/CVFHeatTracker.mm; sourceTree = "<group>"; };
+		42551E6E1A3DE146001BD3AD /* GalileoControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GalileoControl.framework; path = ../GalileoTracker/GalileoControl.framework; sourceTree = "<group>"; };
+		42551E701A3DE282001BD3AD /* CVFGalileoHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFGalileoHandler.h; sourceTree = "<group>"; };
+		42551E711A3DE282001BD3AD /* CVFGalileoHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVFGalileoHandler.m; sourceTree = "<group>"; };
+		42551E721A3DE282001BD3AD /* CVFBlobFollow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVFBlobFollow.mm; sourceTree = "<group>"; };
+		42551E731A3DE282001BD3AD /* CVFBlobFollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFBlobFollow.h; sourceTree = "<group>"; };
+		42551E761A3DE2D9001BD3AD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		42551E781A3DE2E0001BD3AD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		426B881316BC6BE30093D62F /* NoDescription.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NoDescription.html; sourceTree = "<group>"; };
 		4275AFCB15095A2C00D74063 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		427D67DF15D9CB81008A25FA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -118,6 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42551E791A3DE2E0001BD3AD /* CoreBluetooth.framework in Frameworks */,
+				42551E771A3DE2D9001BD3AD /* libxml2.dylib in Frameworks */,
 				42B958051A3D4B7D00BA11E0 /* libstdc++.dylib in Frameworks */,
 				42B958031A3D45D700BA11E0 /* MobileCoreServices.framework in Frameworks */,
 				42AA085A1508314600B379F4 /* Foundation.framework in Frameworks */,
@@ -127,6 +144,7 @@
 				42B957FB1A3D436500BA11E0 /* QuartzCore.framework in Frameworks */,
 				42B957F91A3D42BD00BA11E0 /* OpenGLES.framework in Frameworks */,
 				42B957F71A3D428B00BA11E0 /* ExternalAccessory.framework in Frameworks */,
+				42551E6F1A3DE146001BD3AD /* GalileoControl.framework in Frameworks */,
 				427DEE02188A413800CAD1E1 /* AssetsLibrary.framework in Frameworks */,
 				42AA08581508314600B379F4 /* UIKit.framework in Frameworks */,
 				4253708C1508383800BFE3C0 /* AVFoundation.framework in Frameworks */,
@@ -149,6 +167,12 @@
 				420A3F8415BC6724004804EF /* CVFPassThru.mm */,
 				42B497211A3DB1B00044B090 /* CVFHeatKey.h */,
 				42B497221A3DB1B00044B090 /* CVFHeatKey.mm */,
+				42551E6B1A3DDF40001BD3AD /* CVFHeatTracker.h */,
+				42551E6C1A3DDF40001BD3AD /* CVFHeatTracker.mm */,
+				42551E701A3DE282001BD3AD /* CVFGalileoHandler.h */,
+				42551E711A3DE282001BD3AD /* CVFGalileoHandler.m */,
+				42551E721A3DE282001BD3AD /* CVFBlobFollow.mm */,
+				42551E731A3DE282001BD3AD /* CVFBlobFollow.h */,
 			);
 			name = Demos;
 			sourceTree = "<group>";
@@ -199,7 +223,10 @@
 		42AA08561508314600B379F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42551E781A3DE2E0001BD3AD /* CoreBluetooth.framework */,
+				42551E761A3DE2D9001BD3AD /* libxml2.dylib */,
 				42B958041A3D4B7D00BA11E0 /* libstdc++.dylib */,
+				42551E6E1A3DE146001BD3AD /* GalileoControl.framework */,
 				42B497261A3DD68E0044B090 /* FLIROneSDK.framework */,
 				42B958021A3D45D600BA11E0 /* MobileCoreServices.framework */,
 				42B958001A3D445E00BA11E0 /* ImageIO.framework */,
@@ -339,11 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42551E6D1A3DDF40001BD3AD /* CVFHeatTracker.mm in Sources */,
 				42AA08641508314600B379F4 /* main.m in Sources */,
 				42AA08681508314600B379F4 /* CVFAppDelegate.m in Sources */,
+				42551E741A3DE282001BD3AD /* CVFGalileoHandler.m in Sources */,
 				42AA08711508314600B379F4 /* CVFMainViewController.m in Sources */,
 				42AA08741508314600B379F4 /* CVFFlipsideViewController.m in Sources */,
 				42537094150839FF00BFE3C0 /* CVFImageProcessor.mm in Sources */,
+				42551E751A3DE282001BD3AD /* CVFBlobFollow.mm in Sources */,
 				42B497231A3DB1B00044B090 /* CVFHeatKey.mm in Sources */,
 				420A3F8515BC6724004804EF /* CVFPassThru.mm in Sources */,
 			);
@@ -475,6 +505,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(SRCROOT)/../FLIROneSDK/",
+					/proj/GalileoTracker,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
@@ -495,6 +526,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(SRCROOT)/../FLIROneSDK/",
+					/proj/GalileoTracker,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
