@@ -20,11 +20,13 @@
 
 -(void)processFLIRData:(NSData*)flirImage imageSize:(CGSize)size;
 -(void)process16BitFLIRData:(NSData*)flirImage imageSize:(CGSize)size;
+-(void)process16BitFLIRData:(NSData*)irData irImageSize:(CGSize)irSize visibleData:(NSData*)visData visibleImageSize:(CGSize)visSize;
 -(void)processImageBuffer:(CVImageBufferRef)imageBuffer withMirroring:(BOOL)shouldMirror;
 -(void)processIplImage:(IplImage*)iplImage;
 -(void)imageReady:(IplImage*)image;
 #ifdef __cplusplus
 -(void)processMat:(cv::Mat)mat;
+-(void)processMat1:(cv::Mat)mat1 mat2:(cv::Mat)mat2;
 -(void)matReady:(cv::Mat)mat;
 #endif
 

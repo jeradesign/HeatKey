@@ -17,7 +17,11 @@
 #pragma unused(application)
 #pragma unused(launchOptions)
     // Override point for customization after application launch.
-    NSLog(@"application:didFinishLaunchingWithOptions: --------------------------------------------------------");
+    NSLog(@"***************************************************************************");
+    NSLog(@"*                                                                         *");
+    NSLog(@"*                              HeatKey                                    *");
+    NSLog(@"*                                                                         *");
+    NSLog(@"***************************************************************************");
     return YES;
 }
 							

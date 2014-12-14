@@ -10,15 +10,16 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "CVFFlipsideViewController.h"
 
-#import "CVFCannyDemo.h"
-#import "CVFFaceDetect.h"
-#import "CVFFarneback.h"
-#import "CVFLaplace.h"
-#import "CVFLucasKanade.h"
-#import "CVFMotionTemplates.h"
-
-#import "CVFSephiaDemo.h"
 #import "CVFPassThru.h"
+
+@interface CVFMainViewController()
+
+@property (atomic, strong) NSData *irData;
+@property (atomic, assign) CGSize irSize;
+@property (atomic, strong) NSData *visData;
+@property (atomic, assign) CGSize visSize;
+
+@end
 
 @implementation CVFMainViewController {
     CVFImageProcessor *_imageProcessor;
@@ -333,7 +334,7 @@
     [[FLIROneSDKStreamManager sharedInstance] addDelegate:self];
 //    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsBlendedMSXRGBA8888Image];
 //    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalRGBA8888Image];
-    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalLinearFlux14BitImage];
+    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalLinearFlux14BitImage | FLIROneSDKImageOptionsVisualYCbCr888Image];
 }
 
 - (void)turnCameraOn {
@@ -363,10 +364,32 @@
 #pragma unused(delegateManager)
 #pragma unused(linearFluxImage)
 #pragma unused(size)
-    NSLog(@"didReceiveThermalThermalLinearFlux14BitImage:");
-    [self.imageProcessor process16BitFLIRData:linearFluxImage imageSize:size];
+//    NSLog(@"didReceiveThermalThermalLinearFlux14BitImage:");
+    if (self.visData != nil) {
+        [self.imageProcessor process16BitFLIRData:linearFluxImage irImageSize:size visibleData:self.visData visibleImageSize:self.visSize];
+        self.visData = nil;
+        self.irData = nil;
+    } else {
+        self.irData = linearFluxImage;
+        self.irSize = size;
+    }
 }
 
+- (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager didReceiveVisualYCbCr888Image:(NSData *)visualYCbCr888Image imageSize:(CGSize)size
+{
+#pragma unused(delegateManager)
+#pragma unused(visualYCbCr888Image)
+#pragma unused(size)
+//    NSLog(@"didReceiveVisualJPEGImage:");
+    if (self.irData != nil) {
+        [self.imageProcessor process16BitFLIRData:self.irData irImageSize:self.irSize visibleData:visualYCbCr888Image visibleImageSize:size];
+        self.visData = nil;
+        self.irData = nil;
+    } else {
+        self.visData = visualYCbCr888Image;
+        self.visSize = size;
+    }
+}
 
 #pragma mark - FLIROneSDKStreamManagerDelegate methods
 

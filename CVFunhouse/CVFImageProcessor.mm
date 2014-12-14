@@ -42,6 +42,17 @@
     [self processMat:workingCopy];
 }
 
+-(void)process16BitFLIRData:(NSData*)irData irImageSize:(CGSize)irSize visibleData:(NSData*)visData visibleImageSize:(CGSize)visSize
+{
+//    NSLog(@"process16BitFLIRData:irImageSize:visibleData:visibleImageSize:");
+    cv::Mat irMat((int)irSize.height, (int)irSize.width, CV_16UC1, (char*)[irData bytes]);
+    cv::Mat workingIrMat = irMat.clone();
+    
+    cv::Mat visMat((int)visSize.height, (int)visSize.width, CV_8UC3, (char*)[visData bytes]);
+    cv::Mat workingVisMat = visMat.clone();
+    [self processMat1:workingIrMat mat2:workingVisMat];
+}
+
 -(void)processImageBuffer:(CVImageBufferRef)imageBuffer withMirroring:(BOOL)shouldMirror
 {
     // Lock the base address of the pixel buffer
@@ -77,6 +88,13 @@
     CVPixelBufferUnlockBaseAddress(imageBuffer, 0);
 
     [self processMat:workingCopy];
+}
+
+-(void)processMat1:(cv::Mat)mat1 mat2:(cv::Mat)mat2
+{
+#pragma unused(mat1)
+#pragma unused(mat2)
+    [self doesNotRecognizeSelector:_cmd];
 }
 
 /* Default implementation of processMat converts Mat        */
@@ -216,6 +234,7 @@ static void ReleaseMatDataCallback(void *info, const void *data, size_t size)
     size_t bitsPerPixel;
     CGColorSpaceRef space;
     
+    CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault | kCGImageAlphaNone;
     if (mat->channels() == 1) {
         bitsPerPixel = 8;
         space = CGColorSpaceCreateDeviceGray(); // must release after CGImageCreate
@@ -225,11 +244,11 @@ static void ReleaseMatDataCallback(void *info, const void *data, size_t size)
     } else if (mat->channels() == 4) {
         bitsPerPixel = 32;
         space = CGColorSpaceCreateDeviceRGB(); // must release after CGImageCreate
+        bitmapInfo = kCGBitmapByteOrderDefault | kCGImageAlphaLast;
     } else {
         abort();
     }
     
-    CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault | kCGImageAlphaNone;
     CGDataProviderRef provider = CGDataProviderCreateWithData(mat,
                                                               mat->data,
                                                               0,

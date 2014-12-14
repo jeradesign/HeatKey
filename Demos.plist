@@ -7,32 +7,8 @@
 		<string>CVFPassThru</string>
 	</array>
 	<array>
-		<string>Canny Edge Detector</string>
-		<string>CVFCannyDemo</string>
-	</array>
-	<array>
-		<string>Face Detector</string>
-		<string>CVFFaceDetect</string>
-	</array>
-	<array>
-		<string>Laplace</string>
-		<string>CVFLaplace</string>
-	</array>
-	<array>
-		<string>Farneback</string>
-		<string>CVFFarneback</string>
-	</array>
-	<array>
-		<string>Lucas-Kanade</string>
-		<string>CVFLucasKanade</string>
-	</array>
-	<array>
-		<string>Motion Templates</string>
-		<string>CVFMotionTemplates</string>
-	</array>
-	<array>
-		<string>Hough Transform</string>
-		<string>CVFHough</string>
+		<string>HeatKey</string>
+		<string>CVFHeatKey</string>
 	</array>
 </array>
 </plist>
