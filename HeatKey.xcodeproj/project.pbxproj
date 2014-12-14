@@ -41,7 +41,7 @@
 		42B3377915BA94A000CBD888 /* CVFunhouse57.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B3377815BA94A000CBD888 /* CVFunhouse57.png */; };
 		42B497231A3DB1B00044B090 /* CVFHeatKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42B497221A3DB1B00044B090 /* CVFHeatKey.mm */; };
 		42B497251A3DCA710044B090 /* vikinglander1-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B497241A3DCA710044B090 /* vikinglander1-1.jpg */; };
-		42B957F31A3D2C4A00BA11E0 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B957F21A3D2C4A00BA11E0 /* FLIROneSDK.framework */; };
+		42B497271A3DD68E0044B090 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B497261A3DD68E0044B090 /* FLIROneSDK.framework */; };
 		42B957F51A3D2C7200BA11E0 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42B957F41A3D2C7200BA11E0 /* FLIROneSDK.bundle */; };
 		42B957F71A3D428B00BA11E0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B957F61A3D428B00BA11E0 /* ExternalAccessory.framework */; };
 		42B957F91A3D42BD00BA11E0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B957F81A3D42BD00BA11E0 /* OpenGLES.framework */; };
@@ -100,7 +100,7 @@
 		42B497211A3DB1B00044B090 /* CVFHeatKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFHeatKey.h; path = CVFunhouse/CVFHeatKey.h; sourceTree = "<group>"; };
 		42B497221A3DB1B00044B090 /* CVFHeatKey.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVFHeatKey.mm; path = CVFunhouse/CVFHeatKey.mm; sourceTree = "<group>"; };
 		42B497241A3DCA710044B090 /* vikinglander1-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vikinglander1-1.jpg"; sourceTree = "<group>"; };
-		42B957F21A3D2C4A00BA11E0 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../FLIROneSDK/FLIROneSDK.framework; sourceTree = "<group>"; };
+		42B497261A3DD68E0044B090 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../FLIROneSDK/FLIROneSDK.framework; sourceTree = "<group>"; };
 		42B957F41A3D2C7200BA11E0 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../FLIROneSDK/FLIROneSDK.bundle; sourceTree = "<group>"; };
 		42B957F61A3D428B00BA11E0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		42B957F81A3D42BD00BA11E0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -127,11 +127,11 @@
 				42B957FB1A3D436500BA11E0 /* QuartzCore.framework in Frameworks */,
 				42B957F91A3D42BD00BA11E0 /* OpenGLES.framework in Frameworks */,
 				42B957F71A3D428B00BA11E0 /* ExternalAccessory.framework in Frameworks */,
-				42B957F31A3D2C4A00BA11E0 /* FLIROneSDK.framework in Frameworks */,
 				427DEE02188A413800CAD1E1 /* AssetsLibrary.framework in Frameworks */,
 				42AA08581508314600B379F4 /* UIKit.framework in Frameworks */,
 				4253708C1508383800BFE3C0 /* AVFoundation.framework in Frameworks */,
 				425370901508384900BFE3C0 /* CoreMedia.framework in Frameworks */,
+				42B497271A3DD68E0044B090 /* FLIROneSDK.framework in Frameworks */,
 				425370911508384900BFE3C0 /* CoreVideo.framework in Frameworks */,
 				4250A8E91714C82200B880C3 /* GLKit.framework in Frameworks */,
 				42171D1215BA6C19008BEA68 /* opencv2.framework in Frameworks */,
@@ -200,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				42B958041A3D4B7D00BA11E0 /* libstdc++.dylib */,
+				42B497261A3DD68E0044B090 /* FLIROneSDK.framework */,
 				42B958021A3D45D600BA11E0 /* MobileCoreServices.framework */,
 				42B958001A3D445E00BA11E0 /* ImageIO.framework */,
 				42B957FE1A3D43C200BA11E0 /* CoreImage.framework */,
@@ -207,7 +208,6 @@
 				42B957FA1A3D436500BA11E0 /* QuartzCore.framework */,
 				42B957F81A3D42BD00BA11E0 /* OpenGLES.framework */,
 				42B957F61A3D428B00BA11E0 /* ExternalAccessory.framework */,
-				42B957F21A3D2C4A00BA11E0 /* FLIROneSDK.framework */,
 				427DEE01188A413800CAD1E1 /* AssetsLibrary.framework */,
 				42AA08571508314600B379F4 /* UIKit.framework */,
 				42AA08591508314600B379F4 /* Foundation.framework */,
@@ -474,7 +474,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/proj/FLIROneSDK,
+					"$(SRCROOT)/../FLIROneSDK/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
@@ -494,7 +494,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/proj/FLIROneSDK,
+					"$(SRCROOT)/../FLIROneSDK/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
