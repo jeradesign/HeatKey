@@ -10,7 +10,7 @@
 		4208EEAD1612D46D006E7842 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4208EEAC1612D46D006E7842 /* Default-568h@2x.png */; };
 		4209534315C0AC0600C37CD8 /* CVFLucasKanade.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4209534215C0AC0600C37CD8 /* CVFLucasKanade.mm */; };
 		4209534715C0BEB200C37CD8 /* CVFMotionTemplates.m in Sources */ = {isa = PBXBuildFile; fileRef = 4209534615C0BEB200C37CD8 /* CVFMotionTemplates.m */; };
-		420A3F8515BC6724004804EF /* CVFPassThru.m in Sources */ = {isa = PBXBuildFile; fileRef = 420A3F8415BC6724004804EF /* CVFPassThru.m */; };
+		420A3F8515BC6724004804EF /* CVFPassThru.mm in Sources */ = {isa = PBXBuildFile; fileRef = 420A3F8415BC6724004804EF /* CVFPassThru.mm */; };
 		420A4FAF16C4B45200256C66 /* CVFFarneback.html in Resources */ = {isa = PBXBuildFile; fileRef = 420A4FAA16C4B45200256C66 /* CVFFarneback.html */; };
 		420A4FB016C4B45200256C66 /* CVFLaplace.html in Resources */ = {isa = PBXBuildFile; fileRef = 420A4FAB16C4B45200256C66 /* CVFLaplace.html */; };
 		420A4FB116C4B45200256C66 /* CVFLucasKanade.html in Resources */ = {isa = PBXBuildFile; fileRef = 420A4FAC16C4B45200256C66 /* CVFLucasKanade.html */; };
@@ -73,7 +73,7 @@
 		4209534515C0BE8A00C37CD8 /* CVFMotionTemplates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFMotionTemplates.h; path = CVFunhouse/CVFMotionTemplates.h; sourceTree = "<group>"; };
 		4209534615C0BEB200C37CD8 /* CVFMotionTemplates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVFMotionTemplates.m; path = CVFunhouse/CVFMotionTemplates.m; sourceTree = "<group>"; };
 		420A3F8315BC6724004804EF /* CVFPassThru.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFPassThru.h; path = CVFunhouse/CVFPassThru.h; sourceTree = "<group>"; };
-		420A3F8415BC6724004804EF /* CVFPassThru.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVFPassThru.m; path = CVFunhouse/CVFPassThru.m; sourceTree = "<group>"; };
+		420A3F8415BC6724004804EF /* CVFPassThru.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVFPassThru.mm; path = CVFunhouse/CVFPassThru.mm; sourceTree = "<group>"; };
 		420A4FAA16C4B45200256C66 /* CVFFarneback.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CVFFarneback.html; sourceTree = "<group>"; };
 		420A4FAB16C4B45200256C66 /* CVFLaplace.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CVFLaplace.html; sourceTree = "<group>"; };
 		420A4FAC16C4B45200256C66 /* CVFLucasKanade.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CVFLucasKanade.html; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 				CD7E937515BB5354004D709A /* CVFSephiaDemo.h */,
 				CD7E937615BB5354004D709A /* CVFSephiaDemo.m */,
 				420A3F8315BC6724004804EF /* CVFPassThru.h */,
-				420A3F8415BC6724004804EF /* CVFPassThru.m */,
+				420A3F8415BC6724004804EF /* CVFPassThru.mm */,
 				4285252615BF696700622EE8 /* CVFFaceDetect.h */,
 				4285252715BF698800622EE8 /* CVFFaceDetect.mm */,
 				4285253015BF791600622EE8 /* CVFFarneback.h */,
@@ -405,7 +405,7 @@
 				42537094150839FF00BFE3C0 /* CVFImageProcessor.mm in Sources */,
 				42B3377C15BB2F5200CBD888 /* CVFCannyDemo.m in Sources */,
 				CD7E937715BB5354004D709A /* CVFSephiaDemo.m in Sources */,
-				420A3F8515BC6724004804EF /* CVFPassThru.m in Sources */,
+				420A3F8515BC6724004804EF /* CVFPassThru.mm in Sources */,
 				4285252815BF698800622EE8 /* CVFFaceDetect.mm in Sources */,
 				4285253215BF792F00622EE8 /* CVFFarneback.m in Sources */,
 				4285253515BF83FF00622EE8 /* CVFLaplace.mm in Sources */,

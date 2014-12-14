@@ -34,6 +34,14 @@
     [self processMat:workingCopy];
 }
 
+-(void)process16BitFLIRData:(NSData*)flirImage imageSize:(CGSize)size
+{
+    cv::Mat mat((int)size.height, (int)size.width, CV_16UC1, (char*)[flirImage bytes]);
+    cv::Mat workingCopy = mat.clone();
+    
+    [self processMat:workingCopy];
+}
+
 -(void)processImageBuffer:(CVImageBufferRef)imageBuffer withMirroring:(BOOL)shouldMirror
 {
     // Lock the base address of the pixel buffer

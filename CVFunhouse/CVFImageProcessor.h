@@ -19,6 +19,7 @@
 @property (nonatomic, readonly) NSString *demoDescription;
 
 -(void)processFLIRData:(NSData*)flirImage imageSize:(CGSize)size;
+-(void)process16BitFLIRData:(NSData*)flirImage imageSize:(CGSize)size;
 -(void)processImageBuffer:(CVImageBufferRef)imageBuffer withMirroring:(BOOL)shouldMirror;
 -(void)processIplImage:(IplImage*)iplImage;
 -(void)imageReady:(IplImage*)image;
