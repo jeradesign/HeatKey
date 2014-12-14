@@ -18,7 +18,7 @@ http://www.flir.com/flirone/developer.CFM
 Place the "FLIROneSDK" folder in the same folder that contains the top-level
 "HeatKey" folder.  That is:
 
-  .../something/FlirOneSDK
+  .../something/FlirOneSDK  
   .../something/HeatKey
 
 If you do this, Your should be able to build and run HeatKey without any
