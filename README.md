@@ -1,35 +1,38 @@
-This project should contain everything you need to build and run CVFunhouse
-under Xcode 4.5.2. If you run into any problems building or running, please file
-a bug.
+HeatKey is an iPhone app that demonstrates using the FLIR One infrared
+camera to simulate a green screen.
 
-To get started writing your own OpenCV code, try modifying the CVFPassThru
-example. It contains thorough comments explaining exactly what you need to do.
-Plus it starts out working, so you can easily tell if you break anything as you
-hack.
+Video of HeatKey demo:
+https://vimeo.com/114477456
 
-NOTE: CVFunhouse includes a copy of the OpenCV library built as an iOS
-framework. OpenCV is licensed separately under similar terms. See the file
-"OpenCV license.txt" for details. For more information on OpenCV (including full
-source code to the library), see the [OpenCV website](http://opencv.org/).
+Also included is Heat Tracker, a demo that allows a FLIR One infrared camera
+track nearby people using a Motrr Galileo motion base.  Because this code is
+only useful to people who have a Galileo motion base, it's checked in as a
+branch named "galileo".
 
-Augmented Reality
------------------
+Video of Heat Tracker demo:
+https://vimeo.com/114480355
 
-The augmented reality demo is currently checked into a separate branch. To use
-it, enter `git checkout augmented-reality` on the command line.
+Both demos require the FLIR One SDK available at:
+http://www.flir.com/flirone/developer.CFM
 
-Rebasing
---------
+Place the "FLIROneSDK" folder in the same folder that contains the top-level
+"HeatKey" folder.  That is:
 
-If you forked or cloned before 12-Jan-2013, you'll need to rebase your code to
-have your changes fit into the history properly. To do this:
+  .../something/FlirOneSDK
+  .../something/HeatKey
 
-* Enter `git fetch` (**Do not use** `git pull`)
-* Enter `git rebase -i`
-* An editor window will appear.
-	* Delete the line that starts: `pick 2a02f2a`
-	* Delete the line that starts: `pick 429b656`
-* Save the file and close the editor.
-* That's it!  You should be good to go from now on.
+If you do this, Your should be able to build and run HeatKey without any
+additional effort.  If you can't please file a bug.
 
-Sorry for the inconvenience.  This should be a one-time occurrence.
+Heat Tracker (the Galileo demo) requires the Galileo SDK available at:
+http://dev.motrr.com/blog/
+Unfortunately, you may need to delete and re-add the Galileo SDK to build
+correctly.  This will be fixed in the future.
+
+This project is based on CVFunhouse computer vision framework for iOS:
+https://github.com/jeradesign/CVFunhouse
+
+And the OpenCV computer vision library:
+http://opencv.org
+
+Enjoy!
