@@ -35,6 +35,7 @@
 		42AA086E1508314600B379F4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AA086C1508314600B379F4 /* MainStoryboard_iPad.storyboard */; };
 		42AA08711508314600B379F4 /* CVFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA08701508314600B379F4 /* CVFMainViewController.m */; };
 		42AA08741508314600B379F4 /* CVFFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA08731508314600B379F4 /* CVFFlipsideViewController.m */; };
+		42ADE5611A68CD0E005874D7 /* HeatKey120.png in Resources */ = {isa = PBXBuildFile; fileRef = 42ADE5601A68CD0E005874D7 /* HeatKey120.png */; };
 		42B3376D15BA944400CBD888 /* CVFunhouse144.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B3376C15BA944400CBD888 /* CVFunhouse144.png */; };
 		42B3377015BA945A00CBD888 /* CVFunhouse72.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B3376F15BA945A00CBD888 /* CVFunhouse72.png */; };
 		42B3377615BA949400CBD888 /* CVFunhouse114.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B3377515BA949400CBD888 /* CVFunhouse114.png */; };
@@ -43,7 +44,6 @@
 		42B497251A3DCA710044B090 /* vikinglander1-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B497241A3DCA710044B090 /* vikinglander1-1.jpg */; };
 		42B497271A3DD68E0044B090 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B497261A3DD68E0044B090 /* FLIROneSDK.framework */; };
 		42B957F51A3D2C7200BA11E0 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42B957F41A3D2C7200BA11E0 /* FLIROneSDK.bundle */; };
-		42B957F71A3D428B00BA11E0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B957F61A3D428B00BA11E0 /* ExternalAccessory.framework */; };
 		42B957F91A3D42BD00BA11E0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B957F81A3D42BD00BA11E0 /* OpenGLES.framework */; };
 		42B957FB1A3D436500BA11E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B957FA1A3D436500BA11E0 /* QuartzCore.framework */; };
 		42B957FD1A3D437000BA11E0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B957FC1A3D437000BA11E0 /* CoreLocation.framework */; };
@@ -77,6 +77,7 @@
 		427DEE01188A413800CAD1E1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		4285252515BF5A9300622EE8 /* TODO.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = TODO.rtf; sourceTree = "<group>"; };
 		4285252E15BF750000622EE8 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		4291D69F1AA1D14200F93E54 /* HeatKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HeatKey.entitlements; sourceTree = "<group>"; };
 		42AA08531508314600B379F4 /* HeatKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeatKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA08571508314600B379F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42AA08591508314600B379F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +94,7 @@
 		42AA08701508314600B379F4 /* CVFMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVFMainViewController.m; sourceTree = "<group>"; };
 		42AA08721508314600B379F4 /* CVFFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVFFlipsideViewController.h; sourceTree = "<group>"; };
 		42AA08731508314600B379F4 /* CVFFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVFFlipsideViewController.m; sourceTree = "<group>"; };
+		42ADE5601A68CD0E005874D7 /* HeatKey120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatKey120.png; sourceTree = "<group>"; };
 		42B3376C15BA944400CBD888 /* CVFunhouse144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CVFunhouse144.png; sourceTree = "<group>"; };
 		42B3376F15BA945A00CBD888 /* CVFunhouse72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CVFunhouse72.png; sourceTree = "<group>"; };
 		42B3377515BA949400CBD888 /* CVFunhouse114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CVFunhouse114.png; sourceTree = "<group>"; };
@@ -102,7 +104,6 @@
 		42B497241A3DCA710044B090 /* vikinglander1-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vikinglander1-1.jpg"; sourceTree = "<group>"; };
 		42B497261A3DD68E0044B090 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../FLIROneSDK/FLIROneSDK.framework; sourceTree = "<group>"; };
 		42B957F41A3D2C7200BA11E0 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../FLIROneSDK/FLIROneSDK.bundle; sourceTree = "<group>"; };
-		42B957F61A3D428B00BA11E0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		42B957F81A3D42BD00BA11E0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		42B957FA1A3D436500BA11E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		42B957FC1A3D437000BA11E0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -126,7 +127,6 @@
 				42B957FD1A3D437000BA11E0 /* CoreLocation.framework in Frameworks */,
 				42B957FB1A3D436500BA11E0 /* QuartzCore.framework in Frameworks */,
 				42B957F91A3D42BD00BA11E0 /* OpenGLES.framework in Frameworks */,
-				42B957F71A3D428B00BA11E0 /* ExternalAccessory.framework in Frameworks */,
 				427DEE02188A413800CAD1E1 /* AssetsLibrary.framework in Frameworks */,
 				42AA08581508314600B379F4 /* UIKit.framework in Frameworks */,
 				4253708C1508383800BFE3C0 /* AVFoundation.framework in Frameworks */,
@@ -156,6 +156,7 @@
 		4285252915BF6CDF00622EE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				42ADE5601A68CD0E005874D7 /* HeatKey120.png */,
 				42B497241A3DCA710044B090 /* vikinglander1-1.jpg */,
 				42B957F41A3D2C7200BA11E0 /* FLIROneSDK.bundle */,
 				421897E516BC879900AC716C /* CloseButton.png */,
@@ -178,6 +179,7 @@
 		42AA08481508314500B379F4 = {
 			isa = PBXGroup;
 			children = (
+				4291D69F1AA1D14200F93E54 /* HeatKey.entitlements */,
 				4208EEAC1612D46D006E7842 /* Default-568h@2x.png */,
 				4285252515BF5A9300622EE8 /* TODO.rtf */,
 				42AA085D1508314600B379F4 /* CVFunhouse */,
@@ -207,7 +209,6 @@
 				42B957FC1A3D437000BA11E0 /* CoreLocation.framework */,
 				42B957FA1A3D436500BA11E0 /* QuartzCore.framework */,
 				42B957F81A3D42BD00BA11E0 /* OpenGLES.framework */,
-				42B957F61A3D428B00BA11E0 /* ExternalAccessory.framework */,
 				427DEE01188A413800CAD1E1 /* AssetsLibrary.framework */,
 				42AA08571508314600B379F4 /* UIKit.framework */,
 				42AA08591508314600B379F4 /* Foundation.framework */,
@@ -285,6 +286,11 @@
 				TargetAttributes = {
 					42AA08521508314600B379F4 = {
 						DevelopmentTeam = 2HTMSZT3TA;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -313,6 +319,7 @@
 				42AA08621508314600B379F4 /* InfoPlist.strings in Resources */,
 				42AA086B1508314600B379F4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				42AA086E1508314600B379F4 /* MainStoryboard_iPad.storyboard in Resources */,
+				42ADE5611A68CD0E005874D7 /* HeatKey120.png in Resources */,
 				42B3376D15BA944400CBD888 /* CVFunhouse144.png in Resources */,
 				42B3377015BA945A00CBD888 /* CVFunhouse72.png in Resources */,
 				42B3377615BA949400CBD888 /* CVFunhouse114.png in Resources */,
@@ -471,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -480,9 +488,10 @@
 				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CVFunhouse/HeatKey-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HeatKey;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -491,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -500,9 +510,10 @@
 				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CVFunhouse/HeatKey-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HeatKey;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
