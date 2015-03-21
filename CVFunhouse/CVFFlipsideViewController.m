@@ -82,7 +82,7 @@ static NSString *ShowDescriptionHintCellIdentifier = @"ShowDescriptionHint";
     currentTotal += self.menuTable.tableFooterView.bounds.size.height;
     
     //Set the contentSizeForViewInPopover
-    self.contentSizeForViewInPopover = CGSizeMake(320, currentTotal);
+    self.preferredContentSize = CGSizeMake(320, currentTotal);
 }
 
 #pragma mark - Table view data source
