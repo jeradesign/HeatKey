@@ -50,6 +50,7 @@
 		42B958011A3D445E00BA11E0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B958001A3D445E00BA11E0 /* ImageIO.framework */; };
 		42B958031A3D45D700BA11E0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B958021A3D45D600BA11E0 /* MobileCoreServices.framework */; };
 		42B958051A3D4B7D00BA11E0 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B958041A3D4B7D00BA11E0 /* libstdc++.dylib */; };
+		42C169271BA29FEA00FEE643 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C169261BA29FEA00FEE643 /* Accelerate.framework */; };
 		42E60DB416BB52E500F9712B /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42E60DB316BB52E500F9712B /* Demos.plist */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,7 @@
 		42B958001A3D445E00BA11E0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		42B958021A3D45D600BA11E0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		42B958041A3D4B7D00BA11E0 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		42C169261BA29FEA00FEE643 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		42E60DB316BB52E500F9712B /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Demos.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C169271BA29FEA00FEE643 /* Accelerate.framework in Frameworks */,
 				42B958051A3D4B7D00BA11E0 /* libstdc++.dylib in Frameworks */,
 				42B958031A3D45D700BA11E0 /* MobileCoreServices.framework in Frameworks */,
 				42AA085A1508314600B379F4 /* Foundation.framework in Frameworks */,
@@ -201,6 +204,7 @@
 		42AA08561508314600B379F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42C169261BA29FEA00FEE643 /* Accelerate.framework */,
 				42B958041A3D4B7D00BA11E0 /* libstdc++.dylib */,
 				42B497261A3DD68E0044B090 /* FLIROneSDK.framework */,
 				42B958021A3D45D600BA11E0 /* MobileCoreServices.framework */,
